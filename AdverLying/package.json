@@ -1,0 +1,19 @@
+{
+  "name": "AdverLying",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.42",
+    "@material/card": "^0.34.1",
+    "eslint": "^4.19.1",
+    "material-components-web": "^0.34.1",
+    "meteor-node-stubs": "^0.3.2",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-native": "^0.55.2",
+    "react-native-gridview": "^0.1.1",
+    "rmwc": "^1.5.3"
+  }
+}
