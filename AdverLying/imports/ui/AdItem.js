@@ -10,11 +10,11 @@ import {
 } from 'rmwc/Card';
 
 import { Typography } from 'rmwc/Typography';
- 
+
 export default class AdItem extends Component {
   render() {
   	return (
-  		<div className="grid-item">
+  		<div className="grid-item" onClick={this.props.onClick} >
 		  	<Card style={{width: '100%'}}>
 			  <CardPrimaryAction>
 			    <CardMedia sixteenByNine style={{backgroundImage: 'url(https://material-components-web.appspot.com/images/16-9.jpg)'}}/>
