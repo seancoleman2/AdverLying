@@ -17,18 +17,18 @@ export default class AdItem extends Component {
   		<div className="grid-item" onClick={this.props.onClick} >
 		  	<Card style={{width: '100%'}}>
 			  <CardPrimaryAction>
-			    <CardMedia sixteenByNine style={{backgroundImage: 'url(https://material-components-web.appspot.com/images/16-9.jpg)'}}/>
+			    <CardMedia sixteenByNine style={{backgroundImage: `url(${this.props.item.img[0]})`, height: '250px'}}/>
 			    <div style={{padding: '0 1rem 1rem 1rem'}}>
-			      <Typography use="title" tag="h2">{this.props.item.text}</Typography>
+			      <Typography use="title" tag="h2">{this.props.item.headline}</Typography>
 			      <Typography
 			        use="subheading1"
 			        tag="h3"
 			        theme="text-secondary-on-background"
 			        style={{marginTop: '-1rem'}}
 			      >
-			        Technology
+			      {this.props.item.industry}
 			      </Typography>
-			      <Typography use="body1" tag="div" theme="text-secondary-on-background">Visit ten places on our planet that are undergoing the biggest changes today.</Typography>
+			      <Typography use="body1" tag="div" theme="text-secondary-on-background" className='cardDescription'>{this.props.item.description}</Typography>
 			    </div>
 			  </CardPrimaryAction>
 			</Card>
