@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
  
-import AdItem from './AdItem.jsx';
+import AdItem from './AdItem.js';
 import { Typography } from 'rmwc/Typography';
-import Grid from './Grid.jsx';
+import Grid from './Grid.js';
 import 'bootstrap/dist/css/bootstrap.css';
  
 // App component - represents the whole app
